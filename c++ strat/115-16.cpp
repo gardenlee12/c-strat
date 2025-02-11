@@ -19,7 +19,7 @@ int main() {
 			}
 		}
 		if (cash == 250) {
-			win++;
+			win++;	
 		}
 		cash = 50;
 	}
