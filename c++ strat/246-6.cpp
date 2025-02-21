@@ -45,8 +45,9 @@ public:
 		return txt;
 	}
 
-
-
+	void print() {
+		cout << "문자메시지 #" << id << endl << "발신자: " << sender << " 수신자: " << reciver << " 내용: " << txt << endl << endl;
+	}
 };
 
 int SMS::count = 0;
@@ -54,4 +55,12 @@ int SMS::count = 0;
 int main() {
 	SMS obj1("010-1234-5678", "010-1234-5679", "C++ 공부는 잘되가나요?");
 	SMS obj2;
+
+	obj2.setsender("010-1234-5679");
+	obj2.setreciver("010-1234-5678");
+	obj2.settxt("네 5장까지는 문제 없네요.");
+
+	obj1.print();
+	obj2.print();
+
 }
